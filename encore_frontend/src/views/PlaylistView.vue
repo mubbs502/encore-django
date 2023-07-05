@@ -114,9 +114,190 @@
 </style>
 <template>
     <main class="container mb-5 pb-4 padded">
-        {{ playlist.name }}
+        <div class="" id="posts">
+            <div class="row m-0 pt-4 p-0">
+                <div class="col-lg-8">
+                    <div>
+                        <div class="mb-4 p-3 rounded post">
+                            <div class="row mb-3 m-0">
+                                <h2 class="p-0 col-10">{{ playlist.name }}</h2>
+                                <div class="d-flex col m-0 p-0 justify-content-end">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                                    </svg>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            
+                            <div class="row m-0 mb-2">
+                                <div class="ratio ratio-1x1 border col">
+                                    art
+                                </div>
+                                <div class="col-6">
+                                    <ul>
+                                        <li>tags</li>
+                                        <li>songs</li>
+                                        <li>upvotes</li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-2 p-0 m-0 d-flex justify-content-end align-items-end">
+                                    <div class="">
+                                        <ul>
+                                            <li>--</li>
+                                            <li>--</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+
+
+                        </div>
+                        <br>
+                        <div class="rounded mb-5" style="background-color: rgba(0,0,0,.2);">
+                            <div class="row m-0 gap-3">
+                                <div class="m-0 p-0 border row mb-0 container">
+                                    <div class="p-2 m-2" style="width: 72px; max-width: 15%; max-height: 15%;">
+                                        <div class="ratio ratio-1x1 border">
+                                            <a href="#">play</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="p-2 m-2" style="width: 72px; max-width: 15%; max-height: 15%;">
+                                        <div class="ratio ratio-1x1 border">
+                                            <a href="#">shuffle</a>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="p-2 m-2" style="width: 72px; max-width: 15%; max-height: 15%;">
+                                        <div class="ratio ratio-1x1 border">
+                                            <a href="#">share</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="p-2 m-2" style="width: 72px; max-width: 15%; max-height: 15%;">
+                                        <div class="ratio ratio-1x1 border">
+                                            <a href="#">edit</a>
+                                        </div>
+
+                                    </div>
+                                    
+                                
+                                </div> 
+                                
+                                
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="rounded" style="background-color: rgba(0,0,0,.2);">
+                            
+                            <div class="m-0 p-0 align-items-center row mb-0 container">
+                                <div class="p-2 m-2" style="width: 72px; max-width: 15%; max-height: 15%;">
+                                    <div class="ratio ratio-1x1 border">
+
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    name
+                                </div>
+                                <div class="col">
+                                    actions
+                                </div>
+                            </div> 
+                            <hr class="p-0 m-0">
+                            <div class="m-0 p-0 align-items-center row mb-0 container">
+                                <div class="p-2 m-2" style="width: 72px; max-width: 15%; max-height: 15%;">
+                                    <div class="ratio ratio-1x1 border">
+
+                                    </div>
+
+                                </div>
+                                <div class="col-6 border">
+                                    name
+                                </div>
+                                <div class="col border">
+                                    actions
+                                </div>
+                            </div> 
+                            <hr class="p-0 m-0">
+                            <div class="m-0 p-0 align-items-center row mb-0 container">
+                                <div class="p-2 m-2" style="width: 72px; max-width: 15%; max-height: 15%;">
+                                    <div class="ratio ratio-1x1 border">
+
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+                                    name
+                                </div>
+                                <div class="col">
+                                    actions
+                                </div>
+                            </div> 
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="position-sticky col-12 sticky-button">
+                        <div id="submitReset">
+                            <div class="border" hidden style="height: 240px;">
+
+                            </div>
+                            <br hidden>
+                            <br hidden>
+                            <RouterLink to="/create" class="p-4 btn bright col-12 mb-4 rounded text-center">
+                                <div class="vstack gap-2 d-flex justify-content-center  align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                                    </svg>
+                                <p class="mb-0">Create playlist</p>
+                                </div>
+                            </RouterLink>
+                            <br>
+                            <br>
+                            <h3>Suggested users</h3>
+                            <ol>
+                                <li>user 1</li>
+                                <li>user 2</li>
+                                <li>user 3</li>
+                            </ol>
+                            
+                            <br>
+                            <br>
+                            <h3>Top playlists</h3>
+                            <ol>
+                                <li>user 1</li>
+                                <li>user 2</li>
+                                <li>user 3</li>
+                            </ol>
+                            <br>
+                            <br>
+                            <h3>Top tags</h3>
+                            <ol>
+                                <li>user 1</li>
+                                <li>user 2</li>
+                                <li>user 3</li>
+                            </ol>
+
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    
 </template>
 <script>
 import axios from 'axios';

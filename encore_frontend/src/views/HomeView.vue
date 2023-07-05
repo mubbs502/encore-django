@@ -297,7 +297,13 @@ export default {
                 </div>
             </button>`
             document.getElementById('logIn').innerHTML = `
-            <button class="nav-link radio-pill" disabled id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved" type="button" role="tab" aria-controls="pills-saved" aria-selected="false">Log In</button>`
+            <button disabled class="nav-link active btn" id="pills-login-tab" data-bs-toggle="pill" data-bs-target="#pills-login" type="button" role="tab" aria-controls="pills-login" aria-selected="true" style="
+            color: #A4A69C;
+            width: 8rem;
+            font-family: Norms;
+            font-weight: 500;
+            font-size: large;
+            border-width: 0px;">Log In</button>`
             this.errors = []
 
             if (this.form.name === '') {
@@ -354,7 +360,13 @@ export default {
             </button>
             <RouterLink class="forgot d-flex" to="/forgot">Forgot password?</RouterLink><br>`
             document.getElementById('signUp').innerHTML = `
-            <button class="nav-link radio-pill" disabled id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved" type="button" role="tab" aria-controls="pills-saved" aria-selected="false">Sign Up</button>`
+            <button disabled class="nav-link btn" id="pills-signup-tab" data-bs-toggle="pill" data-bs-target="#pills-signup" type="button" role="tab" aria-controls="pills-signup" aria-selected="false" style="
+            color: #A4A69C;
+            width: 8rem;
+            font-family: Norms;
+            font-weight: 500;
+            font-size: large;
+            border-width: 0px;">Sign Up</button>`
             this.errors = [] 
 
             if (this.form.password === '') {
